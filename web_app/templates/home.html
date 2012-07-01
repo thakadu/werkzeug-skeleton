@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <h2>Home Page</h2>
+  {% if error %}<div class="error">{{ error }}</div>{% endif -%}
+  <form action="" method="get">
+    <p><input type="text" name="q" id="q"></p>
+    <input type="submit" id="submit" value="Go!"></p>
+  </form>
+{% endblock %}
